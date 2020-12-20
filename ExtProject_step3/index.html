@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://unpkg.com/ionicons@4.5.10-1/dist/ionicons.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <title>Сироткина. Учебный проект</title>
+    
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-dark bg-dark mb-5">
+        <a class="navbar-brand" href="#">
+          <img src="img/archive.png" width="30" height="30" alt="">
+        </a>
+    </nav>
+  
+    <!-- выпадающие списки с таблицами -->
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            
+              <div class="accordion" id="accordion-div">
+
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          Окончившие
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-div">
+                      <div class="card-body">
+                        
+                          <table class="table table-striped table-borderless">
+                              <thead>
+                              <tr>
+                                <th>№</th>
+                                <th>Фамилия</th>
+                                <th>Имя</th>
+                                <th>Отчество</th>
+                                <th>Год рождения</th>
+                                <th>Год поступления</th>
+                                <th>Год окончания</th>
+                                <th>Группа</th>
+                                <th>Специальность</th>
+                                <th></th>
+                                <th></th>
+                              </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td>№02-22/1894-Б</td>
+                                      <td>Блохин</td>
+                                      <td>Трифон</td>
+                                      <td>Еремеевич</td>
+                                      <td>1997</td>
+                                      <td>2014</td>
+                                      <td>2018</td>
+                                      <td>ТОМ</td>
+                                      <td>технология машиностроения</td>
+                                      <td><ion-icon ios="ios-create" md="md-create"></ion-icon></td>
+                                      <td><ion-icon name="archive"></ion-icon></td>
+                                  </tr>
+                                  <tr>
+                                        <td>№02-22/2034-М</td>
+                                        <td>Морозов</td>
+                                        <td>Кузьма</td>
+                                        <td>Вячеславович</td>
+                                        <td>1996</td>
+                                        <td>2014</td>
+                                        <td>2018</td>
+                                        <td>ТОМ</td>
+                                        <td>технология машиностроения</td>
+                                        <td><ion-icon ios="ios-create" md="md-create"></ion-icon></td>
+                                        <td><ion-icon name="archive"></ion-icon></td>
+                                  </tr>
+                                  <tr>
+                                          <td>№02-22/1542-Ж</td>
+                                          <td>Журавлёв</td>
+                                          <td>Сергей</td>
+                                          <td>Измаилович</td>
+                                          <td>1997</td>
+                                          <td>2014</td>
+                                          <td>2018</td>
+                                          <td>ТОМ</td>
+                                          <td>технология машиностроения</td>
+                                          <td><ion-icon ios="ios-create" md="md-create"></ion-icon></td>
+                                          <td><ion-icon name="archive"></ion-icon></td>
+                                  </tr>
+                              </tbody>
+                              
+                            </table>
+                        
+                        
+                      </div>
+                    </div>
+                  </div>
+            
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Отчисленные
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-div">
+                        <div class="card-body">
+                          
+                            <table class="table table-striped table-borderless">
+                                <thead>
+                                <tr>
+                                  <th>№</th>
+                                  <th>Фамилия</th>
+                                  <th>Имя</th>
+                                  <th>Отчество</th>
+                                  <th>Год рождения</th>
+                                  <th>Год поступления</th>
+                                  <th>Год окончания</th>
+                                  <th>Группа</th>
+                                  <th>Специальность</th>
+                                  <th></th>
+                                  <th></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>№02-22/1894-Б</td>
+                                        <td>Блохин</td>
+                                        <td>Трифон</td>
+                                        <td>Еремеевич</td>
+                                        <td>1997</td>
+                                        <td>2014</td>
+                                        <td>2018</td>
+                                        <td>ТОМ</td>
+                                        <td>технология машиностроения</td>
+                                        <td><ion-icon ios="ios-create" md="md-create"></ion-icon></td>
+                                        <td><ion-icon name="archive"></ion-icon></td>
+                                    </tr>
+                                    <tr>
+                                          <td>№02-22/2034-М</td>
+                                          <td>Морозов</td>
+                                          <td>Кузьма</td>
+                                          <td>Вячеславович</td>
+                                          <td>1996</td>
+                                          <td>2014</td>
+                                          <td>2018</td>
+                                          <td>ТОМ</td>
+                                          <td>технология машиностроения</td>
+                                          <td><ion-icon ios="ios-create" md="md-create"></ion-icon></td>
+                                          <td><ion-icon name="archive"></ion-icon></td>
+                                    </tr>
+                                    <tr>
+                                            <td>№02-22/1542-Ж</td>
+                                            <td>Журавлёв</td>
+                                            <td>Сергей</td>
+                                            <td>Измаилович</td>
+                                            <td>1997</td>
+                                            <td>2014</td>
+                                            <td>2018</td>
+                                            <td>ТОМ</td>
+                                            <td>технология машиностроения</td>
+                                            <td><ion-icon ios="ios-create" md="md-create"></ion-icon></td>
+                                            <td><ion-icon name="archive"></ion-icon></td>
+                                    </tr>
+                                </tbody>
+                                
+                              </table>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            В архиве
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-div">
+                        <div class="card-body">
+                          
+                            <table class="table table-striped table-borderless">
+                                <thead>
+                                <tr>
+                                  <th>№</th>
+                                  <th>Фамилия</th>
+                                  <th>Имя</th>
+                                  <th>Отчество</th>
+                                  <th>Год рождения</th>
+                                  <th>Годы обучения</th>
+                                  <th>Группа</th>
+                                  <th>Специальность</th>
+                                  <th>Год сдачи в архив</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>№02-22/1894-Б</td>
+                                        <td>Блохин</td>
+                                        <td>Трифон</td>
+                                        <td>Еремеевич</td>
+                                        <td>1997</td>
+                                        <td>2014-2018</td>
+                                        <td>ТОМ</td>
+                                        <td>технология машиностроения</td>
+                                        <td>2018</td>
+                                    </tr>
+                                    <tr>
+                                          <td>№02-22/2034-М</td>
+                                          <td>Морозов</td>
+                                          <td>Кузьма</td>
+                                          <td>Вячеславович</td>
+                                          <td>1996</td>
+                                          <td>2014-2018</td>
+                                          <td>ТОМ</td>
+                                          <td>технология машиностроения</td>
+                                          <td>2018</td>
+                                    </tr>
+                                    <tr>
+                                            <td>№02-22/1542-Ж</td>
+                                            <td>Журавлёв</td>
+                                            <td>Сергей</td>
+                                            <td>Измаилович</td>
+                                            <td>1997</td>
+                                            <td>2014-2018</td>
+                                            <td>ТОМ</td>
+                                            <td>технология машиностроения</td>
+                                            <td>2018</td>
+                                    </tr>
+                                </tbody>
+                                
+                              </table>
+                              
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+          </div>
+        </div>
+      </div>
+
+    
+</body>
+</html>
