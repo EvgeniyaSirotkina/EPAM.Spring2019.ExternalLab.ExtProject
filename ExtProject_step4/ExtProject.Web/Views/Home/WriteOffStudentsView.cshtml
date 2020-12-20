@@ -1,0 +1,34 @@
+﻿@using ExtProject.Web.Models
+
+@model IEnumerable<Student>
+
+<table class="table table-striped table-borderless">
+    <thead>
+        <tr>
+            <th>№</th>
+            <th>Фамилия</th>
+            <th>Имя</th>
+            <th>Отчество</th>
+            <th>Год рождения</th>
+            <th>Год поступления</th>
+            <th>Год Отчисления</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var s in Model)
+        {
+            <tr>
+                <td class="table-td">@s.CaseNumber</td>
+                <td class="table-td">@s.Surname</td>
+                <td class="table-td">@s.Name</td>
+                <td class="table-td">@s.MiddleName</td>
+                <td class="table-td-centered">@s.YearOfBirth</td>
+                <td class="table-td-centered">@s.YearOfEntry</td>
+                <td class="table-td-centered">@s.YearOfEndingOrDeduction</td>
+                <td class="table-td-centered">@Html.ActionLink("Списать", "WriteOff", new { id = @s.Id })</td>
+            </tr>
+        }
+
+    </tbody>
+</table>

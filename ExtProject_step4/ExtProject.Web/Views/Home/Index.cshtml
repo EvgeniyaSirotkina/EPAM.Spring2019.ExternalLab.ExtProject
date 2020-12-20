@@ -1,0 +1,137 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@model ExtProject.Web.Models.ViewModels.StudentsViewModel
+
+<div class="container-fluid">
+    <div class="row justify-content-justify">
+        <div class="col-12">
+
+            <div class="accordion" id="accordion-div">
+
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <div class="container">
+                                    @using (Ajax.BeginForm("GraduateStudentsView", "Home", new AjaxOptions { UpdateTargetId = "GraduateStudentsResult" }))
+                                    {
+                                        <input type="submit" class="btn-main" value=" Окончили ">
+                                    }
+                                </div>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-div">
+                        <div class="card-body">
+                            <div id="GraduateStudentsResult">
+
+                            </div>
+                            <div class="container">
+                                @using (Ajax.BeginForm("GraduateStudentsView", "Home", new AjaxOptions { UpdateTargetId = "GraduateStudentsResult" }))
+                                {
+                                    <p class="text-paging">
+                                        @Html.TextBox("page", 1, new { @class = "text-box-style" })
+                                        из @Model.GraduateStudents.Pages
+                                        <input type="submit" value="К странице"
+                                               class="btn btn-default">
+                                    </p>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row justify-content-justify">
+        <div class="col-12">
+
+            <div class="accordion" id="accordion-div">
+
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <div class="container">
+                                    @using (Ajax.BeginForm("ExpelledStudentsView", "Home", new AjaxOptions { UpdateTargetId = "ExpelledStudentsResult" }))
+                                    {
+                                        <input type="submit" class="btn-main" value=" Отчислены ">
+                                    }
+                                </div>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-div">
+                        <div class="card-body">
+                            <div id="ExpelledStudentsResult">
+
+                            </div>
+                            <div class="container">
+                                @using (Ajax.BeginForm("ExpelledStudentsView", "Home", new AjaxOptions { UpdateTargetId = "ExpelledStudentsResult" }))
+                                {
+                                    <p class="text-paging">
+                                        @Html.TextBox("page", 1, new { @class = "text-box-style" })
+                                        из @Model.ExpelledStudents.Pages
+                                        <input type="submit" value="К странице"
+                                               class="btn btn-default">
+                                    </p>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row justify-content-justify">
+        <div class="col-12">
+
+            <div class="accordion" id="accordion-div">
+
+                <div class="card">
+                    <div class="card-header" id="headingTree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTree" aria-expanded="false" aria-controls="collapseTree">
+                                <div class="container">
+                                    @using (Ajax.BeginForm("WriteOffStudentsView", "Home", new AjaxOptions { UpdateTargetId = "WriteOffStudentsResult" }))
+                                    {
+                                        <input type="submit" class="btn-main" value="На списание">
+                                    }
+                                </div>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTree" class="collapse" aria-labelledby="headingTree" data-parent="#accordion-div">
+                        <div class="card-body">
+                            <div id="WriteOffStudentsResult">
+
+                            </div>
+                            <div class="container">
+                                @using (Ajax.BeginForm("WriteOffStudentsView", "Home", new AjaxOptions { UpdateTargetId = "WriteOffStudentsResult" }))
+                                {
+                                    <p class="text-paging">
+                                        @Html.TextBox("page", 1, new { @class = "text-box-style" })
+                                        из @Model.WriteOffStudents.Pages
+                                        <input type="submit" value="К странице"
+                                               class="btn btn-default">
+                                    </p>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

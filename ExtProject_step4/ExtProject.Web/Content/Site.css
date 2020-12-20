@@ -1,0 +1,70 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700&display=swap');
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: "Open Sans";
+    font-size: 1.5em;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.text-box-style {
+    max-width: 35px;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0 .325em;
+}
+
+.text-paging {
+    font-family: "Ubuntu Mono";
+    font-size: 1.0em;
+}
+
+.btn-main {
+    max-width: 100%;
+    padding-left: 40%;
+    padding-right: 40%;
+    background-color: lightblue;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    font-size: 1.7em;
+}
+
+.btn-main:hover {
+    max-width: 100%;
+    padding-left: 40%;
+    padding-right: 40%;
+    background-color: darkblue;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.table-td {
+    text-align: left;
+}
+
+.table-td-centered {
+    text-align: center;
+}
